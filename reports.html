@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="3Clicks">
+    <meta property="og:title" content="Customer Service"/>
+    <meta property="og:description" content="" />
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="" />
+    <!-- Favicon -->
+    <link rel="icon" href=""/>
+	<!-- Pretty Checkbox CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css">
+	  
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Css Custom -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Customer Service | Admin Reports</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row wrapper">
+        <div class="col col-12 col-header sticky-top">
+          <nav class="nav-bar nav-custom row ">
+              <!-- Burger Button -->
+            <div class="boxbtnMenu">
+                <button class="btnMenu d-lg-none" id="btnMenu">
+                  <img src="assets/img/Dashboard/menubtn.png" alt="">
+                </button>
+              </div>
+              <!-- Burger Button --> 
+            <div class="col-12 col-md-3 col-img">
+              <img src="assets/img/Header/ABG logo.svg" width="200" alt="">
+            </div>
+            <div class="col col-12 col-md-7 d-none d-lg-flex col-search">
+              <form class="navbar-form navbar-left">
+                <div class="input-group">
+                  <input type="text" value="" class="form-control" placeholder="Ticket ID">
+                    <span class="input-group-btn">
+                      <button type="button" class="btn btn-primary">
+                      <img src="assets/img/Header/search-icon.png" alt=""></button>
+                    </span>
+                </div>
+              </form>
+            </div>
+            <div class="buttons col-logOut">
+                <a href="#" class="lG">
+                  <img src="assets/img/Header/logout-icon.png" alt="">
+                  <span>Log Out</span>
+                </a>
+
+                <div class="dropdown dropbottom dropleft">
+                  <a class=" dropdown-toggle notBell" href="#" role="button" id="notification" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <img src="assets/img/Header/notification-bell.png" alt="">
+                  </a>
+                    
+                  <div class="dropdown-menu bell" aria-labelledby="notification">
+                      <div class="boxDropShow">
+                        <img src="assets/img/Dashboard/notification-menu-icon.png" alt="">
+                        <div class="titleD">
+
+                          <h2>New Ticket</h2>
+                          <p>You have # new tickets</p>
+                        </div>
+                      </div>
+                      <div class="footer">
+                        <a href="">View all tickets</a>
+                      </div>
+                      
+                    </div>
+                  </div>
+
+              </div>
+          </nav>
+        </div> <!--End col Nav-->
+        <div class="col col-12 col-lg-3 col-aside">
+          <aside class="aside" id="aside">
+              <ul class="nav">
+                  <li>
+                    <a href="admin-dashboard.html" alt="">
+                      <img src="assets/img/Menu/arrow.png" alt="">
+                      <span>Dashboard</span>
+                    </a>
+                  </li>
+                  <!-- ------- -->
+                  <li>
+                    <a href="admin-alltickets.html" class="">
+                      <img src="assets/img/Menu/arrow.png" alt=""> 
+                      <span class="nt">All Tickets</span>
+                      <div class="notificacion at"><span>486</span></div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="admin-Key-Accounts-tickets.html" class="">
+                      <img src="assets/img/Menu/arrow.png" alt="">
+                      <span class="nt">Key Accounts Tickets</span>
+                      <div class="notificacion ka"><span>456</span></div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="admin-GSAS-tickets.html" class="">
+                      <img src="assets/img/Menu/arrow.png" alt="">
+                      <span class="nt">GSAS Tickets</span>
+                      <div class="notificacion gt">56</div>
+                    </a>
+                  </li>
+                  <!-- ---------- -->
+                  <li class="active"><a href="#" class="#"><img src="assets/img/Menu/arrow.png" alt=""> <span>Reports</span></a></li>
+                  <li><a href="Account-setings.html" class=""><img src="assets/img/Menu/arrow.png" alt=""> <span>Account Settings</span></a></li>
+                </ul>
+          </aside>
+        </div> <!--End Col Aside-->
+        <div class="col col-12 col-lg-9 col-main">
+          <main class="main">
+              <div class="container-fluid reports">
+                  <div class="col-12 col">
+                  <div class="header">
+                    <img src="assets/img/Reports/stadistics-icon.png" alt="">
+                    <div class="titles">
+                      <h2>Reports & Stadistics</h2>
+                      <p>Please fill in the form below to see and download a report / stadistics.</p>
+                    </div>
+                  </div>
+
+                </div>
+                  
+                  <div class="formulario">
+                      <form class="FormReports">
+                            <!--  -->
+                            <div class="form-group row">
+                                <label for="from" class="col-sm-3 col-form-label">From:</label>
+                                <div class="col-sm-5">
+                                  <input class="form-control" type="datetime-local" value="" id="from">
+                                </div>
+                            </div>
+                              <!--  -->                  
+                            <div class="form-group row">
+                                <label for="to" class="col-sm-3 col-form-label">To:</label>
+                                <div class="col-sm-5">
+                                  <input class="form-control" type="datetime-local" value="" id="to">
+                                </div>
+                            </div>
+                              <!--  -->                  
+      
+                          <!--  -->
+                            <div class="form-group row">
+                                  <label for="Operator" class="col-sm-3 col-form-label">Operator:</label>
+                                <div class="col-sm-5">
+                                  <input type="text" class="form-control" id="Operator" placeholder="">
+                                </div>
+                            </div>
+                            <!--  -->
+                            <div class="form-group row">
+                              <label for="status" class="col-sm-3 col-form-label">Status:</label>
+                              <div class="col-sm-5">
+                                <select class="form-control" id="status">
+                                  <option selected>Select One </option>
+                                  <option>New</option>
+                                  <option>Pending</option>
+                                  <option>Solved</option>
+                                </select>
+                              </div>
+                            </div>
+                            <!--  -->
+                            <!--  -->
+                            <div class="form-group row">
+                              <label for="country" class="col-sm-3 col-form-label">Country of residence:</label>
+                              <div class="col-sm-5">
+                                <select class="form-control" id="country">
+                                  <option selected>Select One </option>
+                                  <option>Argentina</option>
+                                  <option>Chile</option>
+                                  <option>Paraguay</option>
+                                  <option>Peru</option>
+                                  <option>Uruguay</option>
+                                </select>
+                              </div>
+                            </div>
+                            <!--  -->
+                            <!--  -->
+                            <div class="form-group row">
+                              <label for="location" class="col-sm-3 col-form-label">Location:</label>
+                              <div class="col-sm-5">
+                                <select class="form-control" id="location">
+                                  <option selected>Select One </option>
+                                  <option>Miami (MIA)</option>
+                                  <option>Orlando (MCO)</option>
+                                  <option>San Francisco (SFO)</option>
+                                </select>
+                              </div>
+                            </div>
+                            <!--  -->
+                            <div class="form-group row">
+                              <label for="Company" class="col-sm-3 col-form-label">Company:</label>
+                              <div class="col-sm-5">
+                                <select class="form-control" id="Company">
+                                  <option selected>Select One </option>
+                                  <option>Avis</option>
+                                  <option>Budget</option>
+                                  <option>Payless</option>
+                                </select>
+                              </div>
+                            </div>
+                            <!--  -->
+                            <!--  -->
+                            <div class="form-group row">
+                              <label for="TypeOf" class="col-sm-3 col-form-label">Type Of Issue:</label>
+                              <div class="col-sm-5">
+                                <select class="form-control" id="TypeOf">
+                                  <option selected>Select One </option>
+                                  <option>Extra Charges</option>
+                                  <option>UpSell</option>
+                                  <option>GSA  / Operator / Agency Problem</option>
+                                  <option>Avis Preferred Request</option>
+                                  <option>Bad Attention</option>
+                                </select>
+                              </div>
+                            </div>
+                            <!--  -->
+                            <!--  -->
+                            <div class="form-group row">
+                              <label for="CountryOfIssue" class="col-sm-3 col-form-label">Country of issue:</label>
+                              <div class="col-sm-5">
+                                <select class="form-control" id="CountryOfIssue">
+                                  <option selected>Select One </option>
+                                  <option>United States</option>
+                                  <option>Mexico</option>
+                                  <option>Canada</option>
+                                  <option>Alaska</option>
+                                  <option>Brasil</option>
+                                </select>
+                              </div>
+                            </div>
+						  <!--  -->
+						  <div class="form-group row">
+                <label for="CountryOfIssue" class="col-sm-3 col-form-label">Ticket Type:</label>
+                <div class="col-sm-5">
+                    <div class="pretty p-default p-round p-pulse">
+                      <input type="radio" name="radio" value="option1"/>
+                      <div class="state p-warning">
+                        <label>Key Account</label>
+                      </div>
+                    </div>
+                    <div class="pretty p-default p-round p-pulse">
+                      <input type="radio" name="radio" value=""/>
+                      <div class="state p-warning">
+                        <label>GSA</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--  -->
+				          <a href="#" class="linkModal">Search</a>
+                  </div>
+      
+                </div>
+          </main>
+        </div> <!--End col Main-->
+      </div> <!--End Row-->
+  <p class="text-center copyright">Avis Budget Group © | Service Desck 2019</p>
+    </div> <!--End Container-->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="assets/js/scripts.js"></script>
+  </body>
+</html>

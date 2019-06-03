@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="3Clicks">
+    <meta property="og:title" content="Customer Service"/>
+    <meta property="og:description" content="" />
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="" />
+    <!-- Favicon -->
+    <link rel="icon" href=""/>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Css Custom -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <title>Customer Service | Key Account Dashboard</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row wrapper">
+        <div class="col col-12 col-header sticky-top">
+          <nav class="nav-bar nav-custom row ">
+                <!-- Burger Button -->
+            <div class="boxbtnMenu">
+                <button class="btnMenu d-lg-none" id="btnMenu">
+                  <img src="../assets/img/Dashboard/menubtn.png" alt="">
+                </button>
+              </div>
+              <!-- Burger Button -->   
+            <div class="col-12 col-md-3 col-img">
+              <img src="../assets/img/Header/ABG logo.svg" width="200" alt="">
+            </div>
+            <div class="col col-12 col-md-7 d-none d-lg-flex col-search">
+              <form class="navbar-form navbar-left">
+                <div class="input-group">
+                  <input type="text" value="" class="form-control" placeholder="Ticket ID">
+                    <span class="input-group-btn">
+                      <button type="button" class="btn btn-primary">
+                      <img src="../assets/img/Header/search-icon.png" alt=""></button>
+                    </span>
+                </div>
+              </form>
+            </div>
+            <div class="buttons col-logOut">
+                <a href="#" class="lG">
+                  <img src="../assets/img/Header/logout-icon.png" alt="">
+                  <span>Log Out</span>
+                </a>
+
+                <div class="dropdown dropbottom dropleft">
+                  <a class=" dropdown-toggle notBell" href="#" role="button" id="notification" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <img src="../assets/img/Header/notification-bell.png" alt="">
+                  </a>
+                    
+                  <div class="dropdown-menu bell" aria-labelledby="notification">
+                    <div class="boxDropShow">
+                      <img src="../assets/img/Dashboard/notification-menu-icon.png" alt="">
+                      <div class="titleD">
+
+                        <h2>New Ticket</h2>
+                        <p>You have # new tickets</p>
+                      </div>
+                    </div>
+                    <div class="footer">
+                      <a href="">View all tickets</a>
+                    </div>
+                    
+                  </div>
+
+              </div>
+          </nav>
+        </div> <!--End col Nav-->
+        <div class="col col-12 col-lg-3 col-aside">
+          <aside class="aside" id="aside">
+              <ul class="nav">
+                  <li class="active">
+                    <a href="#" alt="">
+                      <img src="../assets/img/Menu/arrow.png" alt="">
+                      <span>Dashboard</span>
+                    </a>
+                  </li>
+                  <!-- ------- -->
+                  <li>
+                    <a href="key-account-open-new-ticket.html" class="">
+                      <img src="../assets/img/Menu/arrow.png" alt=""> 
+                      <span class="nt">Open a New Ticket</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="key-account-my-tickets.html" class="">
+                      <img src="../assets/img/Menu/arrow.png" alt="">
+                      <span class="nt">My Tickets</span>
+                      <div class="notificacion at"><span>56</span></div>
+                    </a>
+                  </li>
+                 <li><a href="key-account-account-settings.html" class=""><img src="../assets/img/Menu/arrow.png" alt=""> <span>Account Settings</span></a></li>
+                </ul>
+          </aside>
+        </div> <!--End Col Aside-->
+         <div class="col col-12 col-lg-9 col-main">
+          <main class="main">
+            <div class="row cuadros">
+              <div class="col-12 col-sm-4">
+                  <div class="box at">
+                      <h2>All Tickets</h2>
+                      <div class= "box-value">36</div>
+                      <img src="../assets/img/Dashboard/all-tickets-image.png" alt="">
+                    </div>  
+              </div>
+              <div class="col-12 col-sm-4">
+                  <div class="box st">
+                      <h2>Solved Tickets</h2>
+                      <div class= "box-value">23</div>
+                      <img src="../assets/img/Dashboard/solved-tickets-image.png" alt="">
+                    </div>
+              </div>
+              <div class="col-12 col-sm-4">
+                  <div class="box pt">
+                      <h2>Pending Tickets</h2>
+                      <div class= "box-value">13</div>
+                      <img src="../assets/img/Dashboard/pending-tickets-image.png" alt="">
+                    </div>
+              </div>
+            </div> <!--End Row interior Recent Tickets #01-->
+            <div class="row recentTickets">
+              <div class="col col-12">
+                  <h2 class="title">Recent Tickets</h2>
+
+                  <!-- Tabla -->
+                  <div class="table-responsive">
+      
+                    <table class="table tablaRT">
+                      <thead class="headTabla">
+                        <tr>
+                          <th scope="col">ID</th>
+                          <th scope="col">Company</th>
+                          <th scope="col">Location</th>
+                          <th scope="col">Ticket</th>
+                          <th scope="col">Operator</th>
+                          <th scope="col">Customer</th>
+                          <th scope="col">Create Date</th>
+                          <th scope="col">Status</th>
+                        </tr>
+                      </thead>
+                      <tbody class="bodytabla">
+                        <tr>
+                          <th scope="row" class="first">00298</th>
+                          <td>Avis</td>
+                          <td>MIA</td>
+                          <td>Key account</td>
+                          <td>Despegar</td>
+                          <td>Miguel Gomez</td>
+                          <td>13/05/2019</td>
+                          <td class="Pending">Pending</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">00299</th>
+                          <td>Budget</td>
+                          <td>MIA</td>
+                          <td>Key account</td>
+                          <td>Al Mundo</td>
+                          <td>Pedro Pastorica</td>
+                          <td>25/04/2019</td>
+                          <td class="Solved">Solved</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">00300</th>
+                          <td>Payless</td>
+                          <td>MCO</td>
+                          <td>Key account</td>
+                          <td>Avantrip</td>
+                          <td>Osvaldo Miguez</td>
+                          <td>24/04/2019</td>
+                          <td class="Solved">Solved</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">00300</th>
+                          <td>Payless</td>
+                          <td>MCO</td>
+                          <td>Key account</td>
+                          <td>Biblos</td>
+                          <td>Monica Gutierrez</td>
+                          <td>24/04/2019</td>
+                          <td class="New">New</td>
+                        </tr>
+                      </tbody>
+                    </table>
+        
+                    <!-- END Tabla -->
+              </div>
+              </div>
+             </div> <!--End Row interior #02-->
+
+             <div class="row containerLT">
+               <div class="row">
+                 <div class="col col-12">
+                   <div class="boxTitle">
+                  <img src="../assets/img/Dashboard/last-ticket-icon.png" alt="" class="hash-dashboard">
+                  <h2 class="title"> Last Ticket: <span class="numberTicket">000298</span></h2>
+                  <a href="#" class="btn btn-pending">Pending</a>
+                </div>
+
+                
+                <div class="typeOfIssues">
+                  
+                  <h2 class="title">Type Of Issue: <span>Extra Charges</span></h2>
+                  <a href="key-account-ticket.html" class="view"><img src="../assets/img/Dashboard/arrow-view-button.png" alt=""> VIEW</a>
+                </div>
+                 </div>
+               </div> <!--Row 1-->
+               <div class="row boxDetail">
+                  
+                          <div class="boxPdfLink col-12">
+                            <a href="#" class="linkPdf">
+                              <img src="assets/img/Ticket/attached-files.png" alt=""> vaoucher_car_reservation_200745.pdf 
+                              <span style="font-size: 1em;">&#40;79.5kb&#41;</span>
+                            </a>
+                            <a href="#" class="linkPdf">
+                              <img src="assets/img/Ticket/attached-files.png" alt=""> ticket_credit_card.pdf 
+                              <span>&#40;15.5kb&#41;</span>
+                            </a>
+                            
+                                        <div class="col-12 texto">
+                                      
+                                      <p>To whom it may concern,</p>
+                                      <p>
+                                        My name is Pedro González, customer service agent for Despegar, we are authorized agents for Avis. This case is regarding the Prepaid Reservation # 09658886CO6 under the name of Miguel Gomez. Our mutual customer is disputing some of the charges made on his card. Could you please provide us with the final invoice and rental contract?</p>
+                                      <p>We appreciate your cooperation on this issue and your prompt response in order to provide our customer with an appropriate solution.</p>
+                                      <p>Best Regards,</p>
+                                      <p>Pedro González - Despegar.</p>
+                                    </div>
+                            
+                          </div>
+                      
+                    </div>
+
+             </div>
+          </main>
+        </div> <!--End col Main-->
+      </div> <!--End Row-->
+      <p class="text-center copyright">Avis Budget Group © | Service Desck 2019</p>
+    </div> <!--End Container-->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="../assets/js/scripts.js"></script>
+  </body>
+</html>

@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="3Clicks">
+    <meta property="og:title" content="Customer Service"/>
+    <meta property="og:description" content="" />
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="" />
+    <!-- Favicon -->
+    <link rel="icon" href=""/>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Css Custom -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Customer Service | Admin Ticket</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row wrapper">
+        <div class="col col-12 col-header sticky-top">
+          <nav class="nav-bar nav-custom row ">
+              <!-- Burger Button -->
+            <div class="boxbtnMenu">
+                <button class="btnMenu d-lg-none" id="btnMenu">
+                  <img src="../assets/img/Dashboard/menubtn.png" alt="">
+                </button>
+              </div>
+              <!-- Burger Button -->  
+            <div class="col-12 col-md-3 col-img">
+              <img src="assets/img/Header/ABG logo.svg" width="200" alt="">
+            </div>
+            <div class="col col-12 col-md-7 d-none d-lg-flex col-search">
+              <form class="navbar-form navbar-left">
+                <div class="input-group">
+                  <input type="text" value="" class="form-control" placeholder="Ticket ID">
+                    <span class="input-group-btn">
+                      <button type="button" class="btn btn-primary">
+                      <img src="assets/img/Header/search-icon.png" alt=""></button>
+                    </span>
+                </div>
+              </form>
+            </div>
+            <div class="buttons col-logOut">
+                <a href="#" class="lG">
+                  <img src="../assets/img/Header/logout-icon.png" alt="">
+                  <span>Log Out</span>
+                </a>
+
+                <div class="dropdown dropbottom dropleft">
+                  <a class=" dropdown-toggle notBell" href="#" role="button" id="notification" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <img src="../assets/img/Header/notification-bell.png" alt="">
+                  </a>
+                    
+                  <div class="dropdown-menu bell" aria-labelledby="notification">
+                      <div class="boxDropShow">
+                        <img src="assets/img/Dashboard/notification-menu-icon.png" alt="">
+                        <div class="titleD">
+
+                          <h2>New Ticket</h2>
+                          <p>You have # new tickets</p>
+                        </div>
+                      </div>
+                      <div class="footer">
+                        <a href="">View all tickets</a>
+                      </div>
+                      
+                    </div>
+                  </div>
+
+              </div>
+          </nav>
+        </div> <!--End col Nav-->
+        <div class="col col-12 col-lg-3 col-aside">
+          <aside class="aside" id="aside">
+              <ul class="nav">
+                  <li >
+                    <a href="admin-dashboard.html" alt="">
+                      <img src="assets/img/Menu/arrow.png" alt="">
+                      <span>Dashboard</span>
+                    </a>
+                  </li>
+                  <!-- ------- -->
+                  <li>
+                    <a href="admin-alltickets.html" class="">
+                      <img src="assets/img/Menu/arrow.png" alt=""> 
+                      <span class="nt">All Tickets</span>
+                      <div class="notificacion at"><span>486</span></div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="admin-Key-Accounts-tickets.html" class="">
+                      <img src="assets/img/Menu/arrow.png" alt="">
+                      <span class="nt">Key Accounts Tickets</span>
+                      <div class="notificacion ka"><span>456</span></div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="admin-GSAS-tickets.html" class="">
+                      <img src="assets/img/Menu/arrow.png" alt="">
+                      <span class="nt">GSAS Tickets</span>
+                      <div class="notificacion gt">56</div>
+                    </a>
+                  </li>
+                  <!-- ---------- -->
+                  <li><a href="reports.html" class="#"><img src="assets/img/Menu/arrow.png" alt=""> <span>Reports</span></a></li>
+                  <li><a href="Account-setings.html" class=""><img src="assets/img/Menu/arrow.png" alt=""> <span>Account Settings</span></a></li>
+                </ul>
+          </aside>
+        </div> <!--End Col Aside-->
+        <div class="col col-12 col-lg-9 col-main">
+          <main class="main">
+              <div class="row ticket">
+                  <div class="col col-12 goBack">
+                    <a href="admin-alltickets.html"><img src="assets/img/Ticket/go-back.png" alt=""> Go Back</a>
+                  </div>
+                  <div class="row content-ticket">
+                    <div class="col col-12 header-info">
+                      <!--  -->
+                        <div class="boxTitle">
+                            <img src="assets/img/Ticket/ID-ticket-icon.png" alt="" class="hash">
+                            <h2 class="title"> ID: <span class="numberTicket">000298</span></h2>
+                           <a href="#" class="btn-pending">Pending</a>
+                           <p class="operator">Operator: <span>Despegar S.A</span></p>
+                        </div>
+                      <!--  -->
+                      <!--  -->
+                          <a href="" class="closed" data-toggle="modal" data-target="#closeModal"><img src="assets/img/Ticket/close-icon.png" alt=""> Close Ticket</a>
+
+                          <!-- Modal -->
+                          <div class="modal fade" id="closeModal" tabindex="-1" role="dialog" aria-labelledby="closeModalLabel" aria-hidden="true">
+                              <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                  <div class="modal-body">
+                                    <div class="alert">
+                                      <span>!</span>
+                                    </div>
+                                    <p>Do you want close this ticket?</p>
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary cancelbtn" data-dismiss="modal">Cancel</button>
+                                    <button type="button" class="btn btn-primary closeticketbtn">
+                                      <img src="assets/img/Ticket/close-icon.png" alt="">
+                                      Close Ticket</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                      <!--  -->
+                    </div>
+                    <!--  -->
+                    <div class="ticket-detail col-12 col">
+                      <div class="row">
+                        <div class="col-md-4">
+                          <ul>
+                            <li>Ticket:<span>Key Account</span></li>
+                            <li>Company:<span>Payless</span></li>
+                            <li>Country of issues:<span>United States</span></li>
+                            <li>Create date:<span>01/31/2019 3:45pm</span></li>
+                            <li>Pick-up date:<span>01/05/2019</span></li>
+                          </ul>
+                        </div>
+                        <div class="col-md-4">
+                            <ul>
+                                <li>Type of issues:<span>Extra charges</span></li>
+                                <li>Location:<span>FLL</span></li>
+                                <li>Contract type:<span>Open Contract</span></li>
+                                <li>Rental Agreement:<span>228473755</span></li>
+                                <li>Confirmation #:<span>02378580C51</span></li>
+                              </ul>
+                        </div>
+                        <div class="col-md-4">
+                            <ul>
+                                <li>Name:<span>Juan Jose</span></li>
+                                <li>Surname:<span>Arismendi</span></li>
+                                <li>DNI / Passport:<span>26985321</span></li>
+                                <li>Country of residence:<span>Argentina</span></li>
+                                <li>Phone:<span>-</span></li>
+                              </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <!--  -->
+                    <div class="attached-files col-12" >
+                        <h2>attached files:</h2>
+                        <div class="box-pdflinks">
+                          <a href="#" class="linkPdf"><img src="assets/img/Ticket/attached-files.png" alt=""> vaoucher_car_reservation_200745.pdf <span style="font-size: 1em;">&#40;79.5kb&#41;</span></a>
+                          <a href="#" class="linkPdf"><img src="assets/img/Ticket/attached-files.png" alt=""> ticket_credit_card.pdf <span>&#40;15.5kb&#41;</span></a>
+                        </div>
+                        
+                      </div>
+                    <!--  -->
+                    <div class="message col-12 col">
+                      <h2>message:</h2>
+                      <p>To whom it may concern,</p>
+                      <p>My name is Gabriel Hernández, customer service agent for Despegar, we are authorized agents for Payless. This case is regarding the Prepaid Reservation # 09658886CO6 under the name of Juan José Arismendi. Our mutual customer is disputing some of the charges made on his card. Could you please provide us with the final invoice and rental contract? </p>
+                      <p>We appreciate your cooperation on this issue and your prompt response in order to provide our customer with an appropriate solution.</p></br>
+                      <p>Best Regards,</p> 
+                      <p>Pedro González - Despegar.</p></br>
+                    </div>
+                    <!--  -->
+                    <div class="comentary col-12 col">
+                      <div class="row">
+
+                        <div class="header col-12 col">
+                          <h2><img src="assets/img/Ticket/user-icon.png" alt="">  Saturday, Feb 2 2019 - 13:05 PM - <strong>Malena Branes</strong></h2>
+                          <a href="#" class="edit"><img src="assets/img/Ticket/edit-button.png" alt=""> EDIT</a>
+                        </div>
+                        <div class="body col-12 col">
+                          <p>Dear Pedro González</p>
+                          <p>This reservation is cancelled in the system.
+                            Thank you for contacting Avis Budget Group,</p>  
+                          <p>Malena Branes</p>  
+                          <p>Avis Budget Group Customer Service.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <!--  -->
+                    <div class="post col-12">
+                      <div class="row">
+                        <div class="col-12 col">
+
+                          <h3>Ticket will be reapened on message post</h3>
+                          <p>Enter you message *</p>
+                          <form action="">
+                              <div class="form-group">
+                                  <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+                                </div>
+                          </form>
+                        </div>
+                        <div class="col-12 col">
+                          <div class="form-group row">
+                            <label for="attached-ticket" class="attached-text-ticket">Attachment:</label>
+                            <div class="col-12 col col-sm-6">
+                              <input type="file" class="form-control-file-ticket" id="File" aria-describedby="fileHelp">
+                            </div>
+                          </div>
+                          <div class="row btnModal">
+                            <a href="#" class="post-reply"><img src="assets/img/Ticket/edit-button.png" alt=""> Post Reply</a>
+                            <a href="#" class="cancel-ticket"><img src="assets/img/Ticket/close-icon.png" alt=""> Cancel</a>
+                          </div>
+                          </div>
+                        </div>
+
+                        </div>
+                    <!--  -->
+                  
+                  </div>
+                </div>
+          </main>
+        </div> <!--End col Main-->
+      </div> <!--End Row-->
+      <p class="text-center copyright">Avis Budget Group © | Service Desck 2019</p>
+    </div> <!--End Container-->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="assets/js/scripts.js"></script>
+  </body>
+</html>

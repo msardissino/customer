@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="3Clicks">
+    <meta property="og:title" content="Customer Service"/>
+    <meta property="og:description" content="" />
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="" />
+    <!-- Favicon -->
+    <link rel="icon" href=""/>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Css Custom -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <title>Customer Service | Key Account My Tickets</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row wrapper">
+        <div class="col col-12 col-header sticky-top">
+          <nav class="nav-bar nav-custom row ">
+              <!-- Burger Button -->
+              <div class="boxbtnMenu">
+                  <button class="btnMenu d-lg-none" id="btnMenu">
+                    <img src="../assets/img/Dashboard/menubtn.png" alt="">
+                  </button>
+                </div>
+                <!-- Burger Button -->   
+            <div class="col-12 col-md-3 col-img">
+              <img src="../assets/img/Header/ABG logo.svg" width="200" alt="">
+            </div>
+            <div class="col col-12 col-md-7 d-none d-lg-flex col-search">
+              <form class="navbar-form navbar-left">
+                <div class="input-group">
+                  <input type="text" value="" class="form-control" placeholder="Ticket ID">
+                    <span class="input-group-btn">
+                      <button type="button" class="btn btn-primary">
+                      <img src="../assets/img/Header/search-icon.png" alt=""></button>
+                    </span>
+                </div>
+              </form>
+            </div>
+            <div class="buttons col-logOut">
+                <a href="#" class="lG">
+                  <img src="../assets/img/Header/logout-icon.png" alt="">
+                  <span>Log Out</span>
+                </a>
+
+                <div class="dropdown dropbottom dropleft">
+                  <a class=" dropdown-toggle notBell" href="#" role="button" id="notification" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <img src="../assets/img/Header/notification-bell.png" alt="">
+                  </a>
+                    
+                  <div class="dropdown-menu bell" aria-labelledby="notification">
+                  <div class="boxDropShow">
+                    <img src="../assets/img/Dashboard/notification-menu-icon.png" alt="">
+                    <div class="titleD">
+
+                      <h2>New Ticket</h2>
+                      <p>You have # new tickets</p>
+                    </div>
+                  </div>
+                  <div class="footer">
+                    <a href="">View all tickets</a>
+                  </div>
+                  
+                </div>
+
+              </div>
+          </nav>
+        </div> <!--End col Nav-->
+        <div class="col col-12 col-lg-3 col-aside">
+          <aside class="aside" id="aside">
+              <ul class="nav">
+                  <li>
+                    <a href="key-account-dashboard.html" alt="">
+                      <img src="../assets/img/Menu/arrow.png" alt="">
+                      <span>Dashboard</span>
+                    </a>
+                  </li>
+                  <!-- ------- -->
+                  <li>
+                    <a href="key-account-open-new-ticket.html" class="">
+                      <img src="../assets/img/Menu/arrow.png" alt=""> 
+                      <span class="nt">Open a New Ticket</span>
+                    </a>
+                  </li>
+                  <li class="active">
+                    <a href="#" class="">
+                      <img src="../assets/img/Menu/arrow.png" alt="">
+                      <span class="nt">My Tickets</span>
+                      <div class="notificacion at"><span>56</span></div>
+                    </a>
+                  </li>
+                 <li><a href="key-account-account-settings.html" class=""><img src="../assets/img/Menu/arrow.png" alt=""> <span>Account Settings</span></a></li>
+            </ul>
+          </aside>
+        </div> <!--End Col Aside-->
+        <div class="col col-12 col-lg-9 col-main">
+          <main class="main">
+<div class="row btnModal">
+			<a href="key-account-open-new-ticket.html" class="btn btn-newFilter"><img src="../assets/img/Ticket/edit-button.png" alt=""> Open a New Ticket</a>
+			<a href="" class="btn btn-advancedSearch" data-toggle="modal" data-target="#exampleModalCenter"><img src="../assets/img/All-Tickets/advanced-search-icon.png" alt=""> Advanced Search</a>
+                <!-- Modal -->
+                <div class="modal fade modalCustom" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                      <div class="modal-content AdvancedSearch">
+                        <div class="modal-body">
+                            <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close"> -->
+                          <h5>Advanced Search</h5>
+                          <!-- Form -->
+                          <form class="formModal">
+                            <!--  -->
+                              <div class="form-group row">
+                                    <label for="ticketID" class="col-sm-3 col-form-label">Ticket ID:</label>
+                                  <div class="col-sm-8">
+                                    <input type="text" class="form-control" id="ticketID" placeholder="">
+                                  </div>
+                              </div>
+                              <!--  -->
+                              <div class="form-group row">
+                                <label for="status" class="col-sm-3 col-form-label">Status:</label>
+                                <div class="col-sm-8">
+                                  <select class="form-control" id="status">
+                                    <option selected>Select One </option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                  </select>
+                                </div>
+                              </div>
+                              <!--  -->
+                              <div class="form-group row">
+                                <label for="Company" class="col-sm-3 col-form-label">Company:</label>
+                                <div class="col-sm-8">
+                                  <select class="form-control" id="Company">
+                                    <option selected>Select One </option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                  </select>
+                                </div>
+                              </div>
+                              <!--  -->
+    
+                              <!--  -->
+                              <div class="form-group row">
+                                  <label for="Location" class="col-sm-3 col-form-label">Location:</label>
+                                  <div class="col-sm-8">
+                                    <select class="form-control" id="Location">
+                                      <option selected>Select One </option>
+                                      <option>1</option>
+                                      <option>2</option>
+                                      <option>3</option>
+                                      <option>4</option>
+                                      <option>5</option>
+                                    </select>
+                                  </div>
+                                </div>
+                              <!--  -->
+                              <div class="form-group row">
+                                <label for="date" class="col-sm-3 col-form-label">Create Date:</label>
+                                <div class="col-sm-6">
+                                  <input class="form-control" type="datetime-local" value="2011-08-19T13:45:00" id="date">
+                                </div>
+                            </div>
+                              <!--  -->
+                              <a href="admin-ticket.html" class="linkModal">Search Ticket</a>
+                            </form>
+                        </div>
+                   
+                      </div>
+                    </div>
+                  </div>
+                <!-- Modal -->
+              <a href="" class="btn btn-clearFilter"><img src="../assets/img/All-Tickets/clear-filter-icon.png" alt=""> Clear Filter</a> </div> 
+            <!--End row 01 Btn-->
+            <div class="row tablaAT">
+              
+            <h2 class="title">All Tickets</h2>
+
+            <!-- Tabla -->
+            <div class="table-responsive">
+
+              <table  class="table tablaAT">
+                <thead class="headTabla">
+                  <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Company</th>
+                    <th scope="col">Country</th>
+                    <th scope="col">Location</th>
+                    <th scope="col">Customer Name</th>
+                    <th scope="col">Create Date</th>
+                    <th scope="col">Status</th>
+                  </tr>
+                </thead>
+                <tbody class="bodytabla">
+                  <tr>
+                    <th scope="row" class="first">00298</th>
+                    <td>Avis</td>
+                    <td>Argentina</td>
+                    <td>MIA</td>
+                    <td>Miguel Gomez</td>
+                    <td>13/05/2019</td>
+                    <td class="Pending">Pending</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">00299</th>
+                    <td>Budget</td>
+                    <td>Chile</td>
+                    <td>MIA</td>
+                    <td>Pedro Pastorica</td>
+                    <td>25/04/2019</td>
+                    <td class="Solved">Solved</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">00300</th>
+                    <td>Payless</td>
+                    <td>Argentina</td>
+                    <td>MCO</td>
+                    <td>Osvaldo Miguez</td>
+                    <td>24/04/2019</td>
+                    <td class="Solved">Solved</td>
+                  </tr>
+                  <tr>
+                      <th scope="row">00300</th>
+                      <td>Payless</td>
+                      <td>Paraguay</td>
+                      <td>SFO</td>
+                      <td>Osvaldo Miguez</td>
+                      <td>24/04/2019</td>
+                    <td class="Solved">Solved</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">00300</th>
+                    <td>Payless</td>
+                    <td>Chile</td>
+                    <td>MCO</td>
+                    <td>Monica Gutierrez</td>
+                    <td>24/04/2019</td>
+                    <td class="New">New</td>
+                  </tr>
+                  <tr>
+                      <th scope="row">00298</th>
+                      <td>Avis</td>
+                      <td>Uruguay</td>
+                      <td>MIA</td>
+                      <td>Miguel Gomez</td>
+                      <td>13/05/2019</td>
+                    <td class="Pending">Pending</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">00300</th>
+                    <td>Payless</td>
+                    <td>Argentina</td>
+                    <td>FLL</td>
+                    <td>Monica Gutierrez</td>
+                    <td>24/04/2019</td>
+                    <td class="New">New</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">00300</th>
+                    <td>Payless</td>
+                    <td>Argentina</td>
+                    <td>MIA</td>
+                    <td>Monica Gutierrez</td>
+                    <td>24/04/2019</td>
+                    <td class="New">New</td>
+                  </tr>
+                  <tr>
+                      <th scope="row">00298</th>
+                      <td>Avis</td>
+                      <td>Chile</td>
+                      <td>JFK</td>
+                      <td>Miguel Gomez</td>
+                      <td>13/05/2019</td>
+                    <td class="Pending">Pending</td>
+                  </tr>
+                    <tr>
+                        <th scope="row">00300</th>
+                        <td>Payless</td>
+                        <td>Argentina</td>
+                        <td>MIA</td>
+                        <td>Osvaldo Miguez</td>
+                        <td>24/04/2019</td>
+                      <td class="Solved">Solved</td>
+                  </tr>
+                  <tr>
+                      <th scope="row">00298</th>
+                      <td>Avis</td>
+                      <td>Chile</td>
+                      <td>SFO</td>
+                      <td>Miguel Gomez</td>
+                      <td>13/05/2019</td>
+                    <td class="Pending">Pending</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">00300</th>
+                    <td>Payless</td>
+                    <td>Paraguay</td>
+                    <td>MIA</td>
+                    <td>Monica Gutierrez</td>
+                    <td>24/04/2019</td>
+                    <td class="New">New</td>
+                  </tr>
+                </tbody>
+              </table>
+  
+              <!-- END Tabla -->
+            </div>
+            <div class="row breadcrumb">
+                  <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                      <a href="" class="linkBread">Page</a>
+                      <li class="breadcrumb-item active">1</li>
+                      <li class="breadcrumb-item"><a href="#">2</a></li>
+                      <li class="breadcrumb-item"><a href="#">3</a></li>
+                      <li class="breadcrumb-item"><a href="#">4</a></li>
+                      <li class="breadcrumb-item"><a href="#">5</a></li>
+                      <li class="breadcrumb-item"><a href="#">7</a></li>
+                      <a href="" class="linkBread">Last</a>
+                    </ol>
+  
+                    <p>Showing 12 of 84 Tickets</p>
+                  </nav>
+  
+            </div>
+            </div>  <!--End row TablaAT-->          </main>
+        </div> 
+        <!--End col Main-->
+      </div> <!--End Row-->
+      <p class="text-center copyright">Avis Budget Group © | Service Desck 2019</p>
+    </div> <!--End Container-->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="../assets/js/scripts.js"></script>
+  </body>
+</html>
